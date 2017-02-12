@@ -2,9 +2,10 @@
   "name": "deep-merge",
   "version": "0.0.1",
   "description": "Deeply merge Javascript objects and arrays",
-  "main": "src/index.js",
+  "main": "lib/deepmerge.js",
   "scripts": {
-    "test": "ava test"
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,9 @@
   "homepage": "https://github.com/lionize/deep-merge#readme",
   "dependencies": {
     "ramda": "^0.23.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-es2015": "^6.22.0"
   }
 }
