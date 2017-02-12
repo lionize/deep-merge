@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/lionize/deep-merge/issues"
   },
-  "homepage": "https://github.com/lionize/deep-merge#readme"
+  "homepage": "https://github.com/lionize/deep-merge#readme",
+  "dependencies": {
+    "ramda": "^0.23.0"
+  }
 }
