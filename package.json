@@ -1,6 +1,6 @@
 {
-  "name": "deep-merge",
-  "version": "0.0.1",
+  "name": "util-deep-merge",
+  "version": "0.0.2",
   "description": "Deeply merge Javascript objects and arrays",
   "main": "lib/deepmerge.js",
   "scripts": {
