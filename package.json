@@ -5,7 +5,8 @@
   "main": "lib/deepmerge.js",
   "scripts": {
     "compile": "babel --presets es2015 -d lib/ src/",
-    "prepublish": "npm run compile"
+    "prepublish": "npm run compile",
+    "test": "ava test"
   },
   "repository": {
     "type": "git",
