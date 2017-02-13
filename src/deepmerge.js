@@ -1,6 +1,10 @@
 import { uniq, concat, mergeWith } from 'ramda'
 
 export default function deepMerge(v1, v2) {
+  if (v1 == null && v2 == null) {
+    return null
+  }
+
   if (Array.isArray(v1) && Array.isArray(v2)) {
     return uniq(concat(v1, v2))
   }

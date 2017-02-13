@@ -1,6 +1,11 @@
 import test from 'ava'
 import dm from '../src/deepmerge'
 
+test('returns null if both arguments are null', t => {
+  const res = dm(null, null)
+  t.is(res, null)
+})
+
 test('concats two arrays', t => {
   const res = dm([1], [2])
   t.deepEqual(res, [1, 2])
